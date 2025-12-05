@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Violência Contra a Mulher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pink-600': '#DB2777', 
+                        'purple-600': '#9333EA', 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        
+        .tab-active {
+            background-color: #fff;
+            color: #DB2777; 
+            border-bottom: 2px solid #DB2777;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen">
+
+        <header class="bg-gradient-to-r from-pink-500 to-purple-400 text-white shadow-lg sticky top-0 z-50">
+            <div class="container mx-auto py-4 px-4">
+                <nav class="flex items-center justify-between">
+                    <h1 class="text-2xl md:text-3xl font-bold">Violência Contra a Mulher</h1>
+                    <div class="flex gap-4">
+                        <a href="home.html" class="hover:underline font-medium">Início</a>
+                        <a href="sobre.html" class="hover:underline font-medium">Sobre</a>
+                        <a href="galeria.html" class="hover:underline font-medium">Galeria</a>
+                        <a href="mapa.html" class="hover:underline font-medium">Mapa</a>
+                        <a href="denuncia.html" class="hover:underline font-medium">Denunciar</a>
+                        <a href="Apoio.html" class="hover:underline font-medium">Apoio</a>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="bg-gradient-to-br from-pink-50 to-purple-50 py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold text-pink-600 mb-6">
+                        Galeria de Conscientização
+                    </h2>
+                    <p class="text-xl text-gray-700">
+                        Campanhas, imagens e vídeos que ajudam a conscientizar sobre a violência contra a mulher
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="w-full max-w-md mx-auto mb-12 flex justify-center border-b border-gray-200">
+                    <button id="tab-fotos" class="flex-1 py-3 text-lg font-medium text-gray-600 hover:text-pink-600 transition-colors tab-active">Fotos</button>
+                    <button id="tab-videos" class="flex-1 py-3 text-lg font-medium text-gray-600 hover:text-pink-600 transition-colors">Vídeos</button>
+                </div>
+
+                <div id="content-fotos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="aspect-square relative overflow-hidden bg-gray-100">
+                            <img src="https://pauloafonso.ba.gov.br/wp-content/uploads/2023/08/CARD-1-AGOSTO-LILAS-2023.jpg" 
+                            alt="Agosto Lilás - Campanha de Conscientização" 
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-sm text-gray-700 font-medium">Agosto Lilás - Campanha de Conscientização</p>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="aspect-square relative overflow-hidden bg-gray-100">
+                            <img src="https://quatis.rj.gov.br/wp-content/uploads/2022/08/PUB-AGOSTO-LILAS-1024x1024.jpg" alt="Agosto Lilás - Mês de Conscientização" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-sm text-gray-700 font-medium">Agosto Lilás - Mês de Conscientização</p>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="aspect-square relative overflow-hidden bg-gray-100">
+                            <img src="https://smabc.org.br/wp-content/uploads/2024/08/capa2-scaled.jpg"" alt="NÃO SE CALE!- Conscientização" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-sm text-gray-700 font-medium">Projeto de Extensão - Conscientização</p>
+                        </div>
+                    </div>
+
+ <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+     <div class="aspect-square relative overflow-hidden bg-gray-100"> <img src="https://quadrofeminino.com/wp-content/uploads/2024/03/Sinais-de-Pedido-de-Ajuda-1024x694.png" alt="Peça Ajuda- Sinal de Ajuda " class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"> </div> 
+                        <div class="p-4">
+                            <p class="text-sm text-gray-700 font-medium">Peça ajuda</p>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="aspect-square relative overflow-hidden bg-gray-100">
+                            <img src="https://goias.gov.br/juceg/wp-content/uploads/sites/42/2024/10/luta-contra-violencia-a-mulher-5.jpeg" alt="Speak Up Against Domestic Violence" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-sm text-gray-700 font-medium">Tipos De Violência</p>
+                        </div>
+                    </div>
+
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="aspect-square relative overflow-hidden bg-gray-100">
+                            <img src="https://diegoemir.com/wp-content/uploads/2020/05/oabma.jpg" alt="Você Não Esta Sozinha!" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-sm text-gray-700 font-medium">Você Não Esta Sozinha</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-videos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hidden">
+                    <!-- Vídeo 1 -->
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="aspect-video relative overflow-hidden bg-gray-900 group cursor-pointer">
+                            <a href="https://www.youtube.com/watch?v=3KVszkTEMhI" target="_blank" rel="noopener noreferrer">
+                                <img src="https://img.youtube.com/vi/3KVszkTEMhI/maxresdefault.jpg" alt="A Violência que os Olhos Não Veem - MPMG" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white fill-white transition-transform group-hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800 mb-2">A Violência que os Olhos Não Veem - MPMG</h3>
+                            <p class="text-sm text-gray-600">Campanha do Ministério Público de Minas Gerais sobre violência contra a mulher</p>
+                        </div>
+                    </div>
+                    <!-- Vídeo 2 -->
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="aspect-video relative overflow-hidden bg-gray-900 group cursor-pointer">
+                            <a href="https://www.youtube.com/watch?v=VmX3BscqQbA" target="_blank" rel="noopener noreferrer">
+                                <img src="https://img.youtube.com/vi/VmX3BscqQbA/maxresdefault.jpg" alt="Agosto Lilás - TV Senado" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white fill-white transition-transform group-hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800 mb-2">Agosto Lilás - TV Senado</h3>
+                            <p class="text-sm text-gray-600">Campanha marca ações de enfrentamento à violência contra a mulher</p>
+                        </div>
+                    </div>
+                    <!-- Vídeo 3 -->
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="aspect-video relative overflow-hidden bg-gray-900 group cursor-pointer">
+                            <a href="https://youtu.be/mg92G5wBWus?si=lCGwrC7fT0L3aVYd" target="_blank" rel="noopener noreferrer">
+                                <img src="https://i.ytimg.com/vi/DhkiKj3AeEM/hqdefault.jpg" alt="Diga Não á violência Domestica" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white fill-white transition-transform group-hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800 mb-2">Hoje eu recebi Floes- Diga Não a Violência Domestica</h3>
+                            <p class="text-sm text-gray-600">A violência doméstica teve um aumento durante o confinamento. Preste atenção nos sinais.</p>
+                        </div>
+                    </div>
+                    <!-- Vídeo 4 -->
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="aspect-video relative overflow-hidden bg-gray-900 group cursor-pointer">
+                            <a href="https://youtu.be/KZXsPc-iSJM?si=YyVpNWWPwxHSBQZd" target="_blank" rel="noopener noreferrer">
+                                <img src="https://www.sindcomteresina.com.br/gerencia/fotos/maria-da-penha.jpg" alt="Testemunho Maria da Penha" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white fill-white transition-transform group-hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800 mb-2">Testemunho Maria da Penha</h3>
+                            <p class="text-sm text-gray-600">Maria da Penha compartilha sua história de vida e suas agressões</p>
+                        </div>
+                    </div>
+                    <!-- Vídeo 5 -->
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div class="aspect-video relative overflow-hidden bg-gray-900 group cursor-pointer">
+                            <a href="https://youtu.be/y6V8lL8xn7g?si=39rtdRTi0FX4Nr0T" target="_blank" rel="noopener noreferrer">
+                                <img src="https://img.freepik.com/fotos-premium/conceito-de-agressao-e-abuso-homem-e-mulher-expressando-violencia-domestica-em-silhueta-de-estudio_230311-23990.jpg?w=1480" alt="elza soares" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white fill-white transition-transform group-hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800 mb-2">Elza Soares</h3>
+                            <p class="text-sm text-gray-600"> Se vai se arrepender e levantar a mão pra mim</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-16 bg-gradient-to-r from-pink-600 to-purple-500 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h3 class="text-3xl md:text-4xl font-bold mb-6">
+                    Compartilhe e Conscientize
+                </h3>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    Ajude a espalhar a mensagem. Compartilhe estas campanhas e ajude a salvar vidas.
+                </p>
+                <a href="denuncia.html" class="inline-block bg-white text-pink-600 hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg transition-colors">
+                    Fazer uma Denúncia
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 text-pink-400">Sobre o Projeto</h4>
+                        <p class="text-gray-300">
+                            Este site foi criado para conscientizar sobre a violência contra a mulher e fornecer recursos para vítimas e apoiadores.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 text-pink-400">Links Úteis</h4>
+                        <ul class="space-y-2">
+                            <li><a href="home.html" class="text-gray-300 hover:text-pink-400">Início</a></li>
+                            <li><a href="sobre.html" class="text-gray-300 hover:text-pink-400">Sobre</a></li>
+                            <li><a href="mapa.html" class="text-gray-300 hover:text-pink-400">Mapa de Apoio</a></li>
+                            <li><a href="denuncia.html" class="text-gray-300 hover:text-pink-400">Fazer Denúncia</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 text-pink-400">Emergência</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>Ligue 180 - Central da Mulher</li>
+                            <li>Ligue 190 - Polícia Militar</li>
+                            <li>Ligue 100 - Direitos Humanos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                    <p>&copy; 2025 Violência Contra a Mulher - Todos os direitos reservados</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabFotos = document.getElementById('tab-fotos');
+            const tabVideos = document.getElementById('tab-videos');
+            const contentFotos = document.getElementById('content-fotos');
+            const contentVideos = document.getElementById('content-videos');
+
+            function showTab(tabId) {
+                if (tabId === 'fotos') {
+                    tabFotos.classList.add('tab-active');
+                    tabVideos.classList.remove('tab-active');
+                    contentFotos.classList.remove('hidden');
+                    contentVideos.classList.add('hidden');
+                } else {
+                    tabVideos.classList.add('tab-active');
+                    tabFotos.classList.remove('tab-active');
+                    contentVideos.classList.remove('hidden');
+                    contentFotos.classList.add('hidden');
+                }
+            }
+
+            tabFotos.addEventListener('click', () => showTab('fotos'));
+            tabVideos.addEventListener('click', () => showTab('videos'));
+        });
+    </script>
+</body>
+</html>

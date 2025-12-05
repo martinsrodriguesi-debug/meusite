@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa - Violência Contra a Mulher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+         
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pink-600': '#DB2777',  
+                        'purple-600': '#9333EA', 
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="min-h-screen">
+        <header class="bg-gradient-to-r from-pink-500 to-purple-400 text-white shadow-lg sticky top-0 z-50">
+            <div class="container mx-auto py-4 px-4">
+                <nav class="flex items-center justify-between">
+                    <h1 class="text-2xl md:text-3xl font-bold">Violência Contra a Mulher</h1>
+                    <div class="flex gap-4">
+                        <a href="home.html" class="hover:underline font-medium">Início</a>
+                        <a href="sobre.html" class="hover:underline font-medium">Sobre</a>
+                        <a href="galeria.html" class="hover:underline font-medium">Galeria</a>
+                        <a href="mapa.html" class="hover:underline font-medium">Mapa</a>
+                        <a href="denuncia.html" class="hover:underline font-medium">Denunciar</a>
+                         <a href="Apoio.html" class="hover:underline font-medium">Apoio</a>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="bg-gradient-to-br from-pink-50 to-purple-50 py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold text-pink-600 mb-6">
+                        Encontre Ajuda Perto de Você
+                    </h2>
+                    <p class="text-xl text-gray-700">
+                        Localize delegacias da mulher, centros de apoio e recursos disponíveis na sua região
+                    </p>
+                </div>
+            </div>
+        </section
+    
+        <!-- Map Section -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Mapa Interativo</h3>
+            <p class="text-gray-600">
+                Veja abaixo os locais de atendimento à mulher em Catanduva.
+            </p>
+        </div>
+
+        <div class="rounded-lg overflow-hidden shadow-lg border border-pink-200 mb-12" style="height: 450px;">
+            <iframe
+                width="100%"
+                height="100%"
+                frameborder="0" style="border:0"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.407932439172!2d-48.97631332406284!3d-21.137862134297322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bd66f3b353d7a3%3A0x39a8f1b4c8203c06!2sDelegacia%20de%20Defesa%20da%20Mulher!5e0!3m2!1spt-BR!2sbr!4v1701240800000"
+                allowfullscreen>
+            </iframe>
+        </div>
+</section>
+
+
+
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Centros de Apoio </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        
+                        <div class="border border-pink-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
+                            <div class="flex items-start gap-3 mb-4">
+                                <div class="bg-pink-100 p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-pink-600">Delegacia da Mulher- Centro</h4>
+                                    <p class="text-sm text-gray-500 mt-1">Delegacia</p>
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500 mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    <p class="text-sm text-gray-700">Rua: Belo Horizonte, 297 - Centro
+                                        15801-150 Catanduva, Centro, Brazil</p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3.08 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    <a href="tel:(11) 3333-4444" class="text-sm text-pink-600 hover:underline">(17) 35232279</a>
+                                </div>
+                                <button onclick="window.open('https://www.google.com/maps?q=Rua+Belo+Horizonte,+297+-+Centro,+Catanduva', '_blank')" 
+                                class="w-full mt-4 bg-white border border-pink-600 text-pink-600 hover:bg-pink-50 font-semibold px-4 py-2 rounded-lg transition-colors flex items-center justify-center">
+                                    Como Chegar
+                                </button>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="border border-pink-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
+                            <div class="flex items-start gap-3 mb-4">
+                                <div class="bg-pink-100 p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-pink-600">Centro de Referência da Mulher</h4>
+                                    <p class="text-sm text-gray-500 mt-1">Centro de Apoio</p>
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-2">
+                                    <svg xmlns="https://share.google/NaDVJeixVlexsjgvJ" class="h-4 w-4 text-gray-500 mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    <p class="text-sm text-gray-700">R. Pará - Jardim Brasil, Catanduva - SP, 15800-040</p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg xmlns="https://share.google/NaDVJeixVlexsjgvJ" class="h-4 w-4 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3.08 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    <a href="tel:(11) 3333-5555" class="text-sm text-pink-600 hover:underline">(11) 3333-5555</a>
+                                </div>
+                                <button class="w-full mt-4 bg-white border border-pink-600 text-pink-600 hover:bg-pink-50 font-semibold px-4 py-2 rounded-lg transition-colors flex items-center justify-center">
+                                    <svg xmlns="https://share.google/NaDVJeixVlexsjgvJ" class="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                                    Como Chegar
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="border border-pink-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
+                            <div class="flex items-start gap-3 mb-4">
+                                <div class="bg-pink-100 p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-pink-600">Casa Abrigo Municipal</h4>
+                                    <p class="text-sm text-gray-500 mt-1">Casa Abrigo</p>
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500 mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    <p class="text-sm text-gray-700">Endereço sigiloso por segurança</p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3.08 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    <p class="text-sm text-pink-600">Ligue 180 para informações</p>
+                                </div>
+                                <button onclick="window.open('https://www.google.com/maps?q=R.+Pará+-+Jardim+Brasil,+Catanduva', '_blank')" 
+                                class="w-full mt-4 bg-white border border-pink-600 text-pink-600 hover:bg-pink-50 font-semibold px-4 py-2 rounded-lg transition-colors flex items-center justify-center">
+                                    Como Chegar
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="py-16 bg-gradient-to-r from-pink-600 to-purple-500 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h3 class="text-3xl md:text-4xl font-bold mb-6">
+                    Em Caso de Emergência
+                </h3>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    Se você está em perigo imediato, ligue para os canais de emergência
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:180" class="inline-block bg-white text-pink-600 hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3.08 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Ligue 180
+                    </a>
+                    <a href="tel:190" class="inline-block bg-white text-pink-600 hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3.08 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Ligue 190
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 text-pink-400">Sobre o Projeto</h4>
+                        <p class="text-gray-300">
+                            Este site foi criado para conscientizar sobre a violência contra a mulher e fornecer recursos para vítimas e apoiadores.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 text-pink-400">Links Úteis</h4>
+                        <ul class="space-y-2">
+                            <li><a href="home.html" class="text-gray-300 hover:text-pink-400">Início</a></li>
+                            <li><a href="sobre.html" class="text-gray-300 hover:text-pink-400">Sobre</a></li>
+                            <li><a href="galeria.html" class="text-gray-300 hover:text-pink-400">Galeria</a></li>
+                            <li><a href="denuncia.html" class="text-gray-300 hover:text-pink-400">Fazer Denúncia</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 text-pink-400">Emergência</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>Ligue 180 - Central da Mulher</li>
+                            <li>Ligue 190 - Polícia Militar</li>
+                            <li>Ligue 100 - Direitos Humanos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                    <p>&copy; 2025 Violência Contra a Mulher - Todos os direitos reservados</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
